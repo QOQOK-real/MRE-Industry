@@ -1,0 +1,65 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "钛还原厂", 
+    "description": "将劣化物还原聚合成钛",
+    "details": "",
+
+    "health": 300,
+    "size": 3,
+    "hasLiquids": true,
+    "itemCapacity":30,
+    "liquidCapacity": 10,
+    
+    "craftTime": 65.5,
+    "consumes": {
+        "power": 2.333,
+        "items": ["劣化物/8"]
+    },
+    "outputItems": [
+        {"item": "titanium", "amount": 15},
+        {"item": "scrap", "amount": 5}
+    ],
+    "outputLiquid": {
+        "liquid": "劣化废液",
+        "amount": 0.08
+    },
+
+    "buildTime": 30.84,
+    "requirements": [
+        "copper/200",
+        "silicon/120",
+        "锂/20"
+    ],
+    "researchCostMultiplier": 0.08,
+    "research": "锂还原厂",
+
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-底"
+			},
+            {
+				"type": "DrawCrucibleFlame",
+				"flameRadius": 5,
+				"flameRadiusIn": 2,
+				"flameRadiusMag": 2.25,
+				"flameRadiusInMag": 1.25,
+				"flameColor": "d8ff11"
+			},
+            {
+                "type": "DrawParticles",
+                "effect": "spark",
+                "color": "5898ff",
+                "radius": 18,
+                "amount": 0.8,
+                "sizeMin": 0.8,
+                "sizeMax": 1.6,
+                "speedMin": 2,
+                "speedMax": 4
+            }
+        ]
+    }
+}

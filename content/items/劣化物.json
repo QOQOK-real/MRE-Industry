@@ -1,0 +1,16 @@
+{
+    "type": "material",
+    "name": "劣化物",
+    "description": "劣化产物，用作酸解，熔炼，淬炼，复合",
+    "details": "原子结构极不稳定的它成为了震荡分馏的最佳选择",
+    "color": "#49eef0",
+    "cost": "1",
+    "flammability": 2,
+    "hardness": 1,
+    "explosiveness": 1,
+    "radioactivity": 0.7,
+    "charge": 0,
+    "alwaysUnlocked":false,
+    "research": "劣化厂",
+    "sprite": "sprites/items/劣化物.png"
+}

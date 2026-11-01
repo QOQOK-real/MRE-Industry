@@ -1,0 +1,24 @@
+{
+  "type": "Floor",
+  "name": "劣化废液池",
+  "description": "劣化废液积成的粘稠液池，单位踩上去会明显减速。",
+  "details": "别在里面游泳。",
+  "hideDetails": false,
+
+  "liquidDrop": "劣化废液",
+  "isLiquid": true,
+  "shallow": true,
+  "drownTime": 0,
+
+  "speedMultiplier": 0.2,
+  "dragMultiplier": 1,
+  "status": "wet",
+  "statusDuration": 60,
+
+  "variants": 3,
+  "cacheLayer": "water",
+  "overlayAlpha": 0.65,
+  "supportsOverlay": true,
+  "albedo": 0.9,
+  "liquidMultiplier": 1
+}

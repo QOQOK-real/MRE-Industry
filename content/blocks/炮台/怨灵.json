@@ -1,0 +1,55 @@
+{
+  "type": "ItemTurret",
+  "name": "怨灵",
+  "description": "MRE毁灭板块",
+  "details": "向附近的敌人发射三道近距离穿透性碎片光束。",
+  "hideDetails": false,
+  "size": 4,
+  "reload": 17,
+  "shake": 4,
+  "range": 110,
+  "recoil": 5,
+  "shoot": {
+    "type": "ShootSpread",
+    "shots": 5,
+    "spread": 20
+  },
+  "shootCone": 50,
+  "targetAir": false,
+  "targetGround": true,
+  "liquidCapacity": 20,
+  "consumes": {
+    "coolant": {
+      "amount": 0.3,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "coolantMultiplier": 5,
+  "Health": 220,
+  "shootSound": "shootFuse",
+  "shootSoundVolume": 0.9,
+  "ammoTypes": {
+    "titanium": {
+      "type": "ShrapnelBulletType",
+      "length": 100,
+      "damage": 52,
+      "ammoMultiplier": 4,
+      "width": 17,
+      "reloadMultiplier": 1.3
+    },
+    "graphite": {
+      "type": "ShrapnelBulletType",
+      "length": 62,
+      "damage": 77,
+      "ammoMultiplier": 5,
+      "width": 22,
+      "reloadMultiplier": 0.6,
+      "toColor": "030378"
+    }
+  },
+  "requirements": [ "copper/150", "lead/20", "titanium/85","锂/40","graphite/150" ],
+  "researchCostMultiplier": 0.12,
+  "category": "turret",
+  "research": "fuse"
+}

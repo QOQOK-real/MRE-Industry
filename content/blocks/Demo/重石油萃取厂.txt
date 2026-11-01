@@ -1,0 +1,60 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "重石油萃取厂", 
+    "description": "萃取石油",
+    "details": "",
+    
+    
+    "health": 1200,
+    "size": 5,
+    "hasLiquids": true,
+    "itemCapacity":300,
+    "liquidCapacity": 150,
+   
+    "craftTime": 320,
+    "consumes": {
+        "power": 5.666,
+        "items": ["coal/120"],
+        "liquid": {
+            "liquid": "water",
+            "amount": 0.2
+        }
+    },
+    "outputLiquid": {
+        "liquid": "oil",
+        "amount": 15
+    },
+    
+    "buildTime": 333,
+    "requirements": [
+        "titanium/100",
+        "silicon/210",
+        "铜钢/30",
+        "graphite/100",
+        "lead/120"
+    ],
+    "researchCostMultiplier": 0.2,
+    "research": "铜压缩厂",
+
+  "drawer": {
+    "type": "DrawMulti",
+        "drawers": [
+            {
+                "type": "DrawRegion",
+                "suffix": "-底"
+            },
+            {
+                "type": "DrawParticles",
+                "effect": "spark",
+                "color": "111111",
+                "radius": 12,
+                "amount": 5,
+                "sizeMin": 0.2,
+                "sizeMax": 1.1,
+                "speedMin": 0.5,
+                "speedMax": 4
+            }
+        ]
+    }
+}

@@ -1,0 +1,93 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "混压厂", 
+    "description": "将提纯出的甲烷加入煤炭催化再次混压为少量劣性天然气",
+    "details": "使副产物甲烷回流进天然气循环",
+
+    "health": 260,
+    "size": 2,
+    "hasLiquids": true,
+    "itemCapacity":20,
+    "liquidCapacity": 15,
+    
+    "craftTime": 180,
+    "consumes": {
+        "power": 4,
+        "items": ["coal/2"],
+        "liquids": ["甲烷/0.009"]
+    },
+    "outputLiquid": {
+        "liquid": "天然气",
+        "amount": 0.00166
+    },
+
+    "buildTime": 45,
+    "requirements": [
+        "titanium/50",
+        "silicon/20",
+        "metaglass/10",
+        "锂/15",
+        "lead/20"
+    ],
+    "researchCostMultiplier": 0,
+    "research": "甲烷",
+    
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+				"suffix": "-底"
+            },
+            { 
+                "type": "DrawLiquidTile",
+                "drawLiquid": "甲烷",
+                "padding": 0,
+                "alpha": 1
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-top"
+            },
+            {
+                "type": "DrawFlame",
+                "flameColor": "7dff7d",
+                "flameRadius": 4,
+                "flameRadiusIn": 2,
+                "flameRadiusScl": 5,
+                "flameRadiusMag": 1.2,
+                "flameRadiusInMag": 0.6,
+                "lightRadius": 20,
+                "lightAlpha": 0.5,
+                "lightSinScl": 10,
+                "lightSinMag": 3
+            }
+        ]
+    },
+    "updateEffect": {
+        "type": "ParticleEffect",
+        "line": true,
+        "particles": 2,
+        "length": -8,
+        "baseLength": 8,
+        "randLength": false,
+        "cone": 360,
+        "lifetime": 45,
+        "strokeFrom": 1,
+        "strokeTo": 0,
+        "lenFrom": 6,
+        "lenTo": 1,
+        "cap": false,
+        "colorFrom": "b8ffb0",
+        "colorTo": "b8ffb000",
+        "offsetX": 0,
+        "offsetY": 0,
+        "lightColor": "b8ffb0",
+        "lightOpacity": 0.04,
+        "lightScl": 1,
+        "clip": 20
+    },
+    "updateEffectChance": 0.35,
+    "updateEffectSpread": 0
+}

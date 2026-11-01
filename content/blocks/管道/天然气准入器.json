@@ -1,0 +1,48 @@
+{
+  "type": "GenericCrafter",
+  "name": "天然气准入器",
+  "description": "只允许向四周输出天然气",
+  "details": "",
+  "size": 1,
+  "health": 40,
+  "liquidCapacity": 20,
+  "hasLiquids": true,
+  "craftTime": 1,
+  "consumes": {
+    "liquid": {
+      "liquid": "天然气",
+      "amount": 0.1
+    }
+  },
+  "outputLiquid": {
+    "liquid": "天然气",
+    "amount": 0.1
+  },
+  "requirements": [
+    "copper/15",
+    "metaglass/10",
+    "titanium/10"
+  ],
+  "category": "liquid",
+  "alwaysUnlocked": false,
+  "research": "天然气抽取平台",
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawRegion",
+        "suffix": "-底"
+      },
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "天然气",
+        "padding": 0,
+        "alpha": 1
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": ""
+      }
+    ]
+  }
+}

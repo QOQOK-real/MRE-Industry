@@ -1,0 +1,68 @@
+{
+  "type": "GenericCrafter",
+  "name": "CFU",
+  "description": "利用沸点差将氦气分馏出来",
+  "details": "【Cryogenic Fractionation Unit】MRE化工板块",
+  
+  "health": 1300,
+  "size": 4,
+  "liquidCapacity": 5,
+  "hasLiquids": true,
+  
+
+  "craftTime": 180,
+  "consumes": {
+    "power": 0.6667,
+    "liquid": {
+      "liquid": "天然气",
+      "amount": 0.00833
+    }
+  },
+  "outputLiquids": [
+    {"liquid": "甲烷", "amount": 0.0045},
+    {"liquid": "氦气", "amount": 0.00233}
+  ],
+  
+  "buildTime": 1200,
+  "requirements": [
+    "铜钢/120",
+    "titanium/200",
+    "silicon/200",
+    "metaglass/100",
+    "锂/100"
+  ],
+  "category": "crafting",
+  "research": {
+    "parent": "大型液化厂",
+    "requirements": [
+      "铜钢/12",
+      "titanium/20",
+      "metaglass/10",
+      "锂/20"
+    ],
+    "objectives": [
+      "天然气"
+    ]
+  },
+
+  "updateEffect": {
+    "type": "ParticleEffect",
+    "region": "circle-shadow",
+    "particles": 4,
+    "length": 9.8,
+    "cone": 360,
+    "lifetime": 45,
+    "interp": "pow2Out",
+    "sizeFrom": 5.6,
+    "sizeTo": 0,
+    "colorFrom": "b8ffe8",
+    "colorTo": "b8ffe800",
+    "offsetX": 0,
+    "offsetY": 0,
+    "lightColor": "b8ffe8",
+    "lightOpacity": 0.15,
+    "lightScl": 2.8
+  },
+  "updateEffectChance": 0.15,
+  "updateEffectSpread": 0
+}

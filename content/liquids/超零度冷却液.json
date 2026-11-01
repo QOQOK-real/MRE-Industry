@@ -1,0 +1,19 @@
+{
+  "type": "liquid",
+  "name": "超零度冷却液",
+  "description": "易挥发的冷却工业精华",
+  "details": "所有人都希望它能直接洒到敌人的身上",
+  "color": "#97cfff",
+  "barColor": "#97cfff",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "coolant": true,
+  "heatCapacity": 2.5,
+  "temperature": 0.15,
+  "viscosity": 0.25,
+  "canBePumped": true,
+  "pumpAmount": 0.5,
+  "alwaysUnlocked": false,
+  "research": "大型液化厂",
+  "sprite": "sprites/liquids/超零度冷却液.png"
+}

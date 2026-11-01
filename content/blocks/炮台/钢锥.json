@@ -1,0 +1,128 @@
+{
+  "type": "ItemTurret",
+  "name": "钢锥",
+  "description": "MRE防空板块",
+  "details": "精准针对快速移动的空中单位抛射大量弹药，搭配重钍钢制弹壳也能拥有不错的破甲效果",
+  "hideDetails": false,
+  "size": 4,
+  "health": 1500,
+
+  "range": 380,
+
+  "reload": 2,
+  "inaccuracy": 1,
+
+  "targetAir": true,
+  "targetGround": false,
+  "targetBlocks": false,
+
+  "maxAmmo": 30,
+  "ammoPerShot": 2,
+  "liquidCapacity": 20,
+  "shake": 1,
+
+  "ammoUseEffect": "casing3",
+  "shootSound": "shootSpectre",
+  "smokeEffect": "shootBigSmoke",
+  "shoot": {
+    "type": "ShootPattern",
+    "shots": 1,
+    "shotDelay": 0
+  },
+
+  "consumes": {
+    "coolant": {
+      "amount": 0.3,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "coolantMultiplier": 5,
+
+  "ammoTypes": {
+    "graphite": {
+      "type": "FlakBulletType",
+      "speed": 5,
+      "damage": 17,
+      "splashDamage": 20,
+      "splashDamageRadius": 24,
+      "lifetime": 80,
+      "width": 8,
+      "height": 10,
+      "explodeRange": 30,
+      "explodeDelay": 5,
+      "ammoMultiplier": 4,
+      "knockback": 1.2,
+      "collidesGround": false,
+      "collidesAir": true,
+      "hitEffect": "flakExplosionBig",
+      "despawnEffect": "flakExplosionBig",
+      "shootEffect": "shootBig",
+      "frontColor": "bac2cc",
+      "backColor": "858a91"
+    },
+    "titanium": {
+      "type": "FlakBulletType",
+      "speed": 6.5,
+      "damage": 24,
+      "splashDamage": 30,
+      "splashDamageRadius": 28,
+      "lifetime": 60,
+      "width": 8,
+      "height": 10,
+      "explodeRange": 32,
+      "explodeDelay": 5,
+      "ammoMultiplier": 3,
+      "reloadMultiplier": 0.9,
+      "knockback": 1.5,
+      "collidesGround": false,
+      "collidesAir": true,
+      "hitEffect": "flakExplosionBig",
+      "despawnEffect": "flakExplosionBig",
+      "shootEffect": "shootBig",
+      "frontColor": "d8e5f0",
+      "backColor": "7d8b99"
+    },
+    "重钍":{
+      "type": "FlakBulletType",
+      "speed": 9,
+      "lifetime": 44,
+      "damage": 32,
+      "knockback": 2,
+      "ammoMultiplier": 5,
+      "reloadMultiplier": 0.5,
+      "pierce": true,
+      "pierceCap": 2,
+      "pierceBuilding": true,
+      "pierceDamageFactor": 0.5,
+      "collidesAir": true,
+      "collidesGround": false,
+      "splashDamage": 0,
+      "splashDamageRadius": 0,
+      "splashDamagePierce": false,
+      "fragBullets": 0,
+      "intervalBullets": 0,
+      "lightning": 0,
+      "hitEffect": "hitSquaresColor",
+      "despawnEffect": "hitSquaresColor",
+      "hitColor": "ff3cff",
+      "shootEffect": "shootBig",
+      "smokeEffect": "none",
+      "despawnHit": false,
+      "hitShake": 0,
+      "despawnShake": 0,
+      "makeFire": false,
+      "incendChance": 0,
+      "incendAmount": 0,
+      "frontColor": "ff3cff",
+      "backColor": "8e218e"
+     }
+  },
+
+  "requirements": [ "copper/120", "lead/100", "titanium/85", "graphite/60","锂/10" ],
+  "researchCostMultiplier": 0.14,
+  "category": "turret",
+  "buildVisibility": "shown",
+  "alwaysUnlocked": false,
+  "research": "cyclone"
+}

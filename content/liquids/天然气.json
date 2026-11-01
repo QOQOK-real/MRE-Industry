@@ -1,0 +1,20 @@
+{
+  "type": "liquid",
+  "name": "天然气",
+  "description": "用于燃烧或提取大量副产气体",
+  "details": "大自然的馈赠",
+  "color": "#6bbfff",
+  "barColor": "#6bbfff",
+  "flammability": 2,
+  "explosiveness": 2,
+  "coolant": false,
+  "heatCapacity": 0.5,
+  "temperature": 0.6,
+  "gas":"true",
+  "viscosity": 0,
+  "canBePumped": true,
+  "pumpAmount": 0.5,
+  "alwaysUnlocked": false,
+  "research": "天然气抽取平台",
+  "sprite": "sprites/liquids/天然气.png"
+}

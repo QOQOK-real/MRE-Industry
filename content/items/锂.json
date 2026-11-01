@@ -1,0 +1,16 @@
+{
+    "type": "material",
+    "name": "锂",
+    "localizedName": "锂",
+    "description": "用于建造化工管道和大型还原设备",
+    "details": "",
+    "color": "#ff0000",
+    "cost": "1",
+    "flammability": 0,
+    "hardness": 4,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "alwaysUnlocked": true,
+    "sprite": "sprites/items/锂.png"
+}

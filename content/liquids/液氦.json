@@ -1,0 +1,19 @@
+{
+  "type": "liquid",
+  "name": "液氦",
+  "description": "服务于医疗核磁共振和半导体领域",
+  "details": "除了特定的合金炮管专为其服务，大多数炮台都无法直接使用其作为冷却液",
+  "color": "#def8ff",
+  "barColor": "#def8ff",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "coolant": false,
+  "heatCapacity": 5,
+  "temperature": 0.01,
+  "viscosity": 0.2,
+  "canBePumped": true,
+  "pumpAmount": 0.5,
+  "alwaysUnlocked": false,
+  "research": "复冻厂",
+  "sprite": "sprites/liquids/液氦.png"
+}

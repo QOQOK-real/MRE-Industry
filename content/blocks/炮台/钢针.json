@@ -1,0 +1,75 @@
+{
+  "type": "ContinuousTurret",
+  "category": "turret",
+  "name": "钢针",
+  "description": "MRE毁灭板块",
+  "details": "几乎无限制的集束激光炮，其明亮光束划破夜空，被MEA的雇佣兵们称为钢针",
+  "hideDetails": false,
+  "size": 4,
+  "health": 3200,
+
+  "range": 331.5,
+
+  "shootWarmupSpeed": 0.03,   
+  "minWarmup": 0.98,          
+  "recoil": 0.2,                
+  "shake": 4,
+  "rotateSpeed": 1.5,                
+
+  "targetAir": true,
+  "targetGround": true,
+
+  "loopSound": "none",
+  "loopSoundVolume": 1.5,
+  "shootSound": "steel-sting",
+  "chargeSound": "steel-charge",
+
+
+  "liquidCapacity": 60,
+  
+  "coolant": { "type": "ConsumeCoolant", "amount": 0.5, "allowLiquid": true, "allowGas": false },
+  "consumes": { "power": 170 },
+
+  "shootType": {
+    "type": "ContinuousLaserBulletType",
+    
+    "ammoUseEffect": "casing1",
+    "ammoEjectBack": 3,
+    "shootEffect": "shootSmall",
+
+    "damage": 90,
+    "damageInterval": 5,
+
+    "length": 331.5,
+
+    "lifetime": 32,
+
+    "fadeTime": 32,
+
+
+    "width": 4,             
+    "drawSize": 700,        
+    "lightColor": "ff9c5a", 
+    "lightOpacity": 0.7,    
+    "hitColor": "ff9c5a",  
+    "largeHit": true,      
+    "hitEffect": "hitBeam",
+
+    "incendChance": 0.4,    
+    "incendAmount": 1,      
+    "incendSpread": 5,      
+    "status": "melting",    
+    "statusDuration": 960,
+
+    "pierce": true,
+    "pierceCap": -1,
+
+    "colors": ["5588ffaa", "5588ff55", "1111ff", "ffffff"]
+  },
+
+  "requirements": [ "titanium/1250", "lead/850", "silicon/850", "thorium/800", "surge-alloy/300","锂/300" ],
+  "researchCostMultiplier": 0.12,
+  "buildVisibility": "shown",
+  "alwaysUnlocked": false,
+  "research": "meltdown"
+}

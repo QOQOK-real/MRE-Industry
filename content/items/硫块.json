@@ -1,0 +1,16 @@
+{
+    "type": "material",
+    "name": "硫块",
+    "description": "",
+    "details": "",
+    "color": "#ff9e27",
+    "cost": "1",
+    "flammability": 4,
+    "hardness": 1,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "alwaysUnlocked": false,
+    "research": "分馏厂",
+    "sprite": "sprites/items/锂.png"
+}

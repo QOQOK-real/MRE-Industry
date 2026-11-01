@@ -1,0 +1,57 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "劣化厂", 
+    "description": "挥发铜产出泛用性劣化物",
+    "details": "它太好用了！好用到飞起啊！！除了排液是个问题，不过不影响它的泛用性！",
+
+    "health": 200,
+    "size": 2,
+    "hasLiquids": true,
+    "itemCapacity": 50,
+    "liquidCapacity": 10,
+   
+    "craftTime": 32.22,
+    "consumes": {
+        "power": 0.5,
+        "items": ["copper/10"]
+    },
+    "outputItems": [
+        {"item": "劣化物", "amount": 1},
+        {"item": "scrap", "amount": 4}
+    ],
+    "outputLiquid": {
+        "liquid": "劣化废液",
+        "amount": 0.02
+    },
+
+    "buildTime": 25.55,
+    "requirements": [
+        "copper/320"
+    ],
+    "researchCostMultiplier": 0,
+    "research": "copper",
+    
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+				"type": "DrawRegion",
+				"suffix": "-底"
+			},
+            {
+                "type": "DrawFlame",
+                "flameColor": "e8ffa9",
+                "flameRadius": 3.2,
+                "flameRadiusIn": 2,
+                "flameRadiusScl": 5,
+                "flameRadiusMag": 1.2,
+                "flameRadiusInMag": 0.6,
+                "lightRadius": 20,
+                "lightAlpha": 0.5,
+                "lightSinScl": 10,
+                "lightSinMag": 3
+            }
+        ]
+    }
+}

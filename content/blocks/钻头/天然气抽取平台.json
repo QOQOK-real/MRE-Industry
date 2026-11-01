@@ -1,0 +1,67 @@
+{
+  "type": "GenericCrafter",
+  "group": "drills",
+  "category": "production",
+  "name": "天然气抽取平台",
+  "description": "从水下打碎干冰并抽取天然气",
+  "details": "MRE产业板块",
+
+  "health": 320,
+  "size": 4,
+  "requiresWater": true,
+  "hasLiquids": true,
+  "liquidCapacity": 20,
+  "hasPower": true,
+  "floating": true,
+  
+  "craftTime": 180,
+  "consumes": {
+    "power": 1
+  },
+  "outputLiquid": {
+    "liquid": "天然气",
+    "amount": 0.00833
+  },
+
+  "buildTime": 420,
+  "requirements": [
+    "copper/350",
+    "titanium/350",
+    "graphite/150",
+    "silicon/250",
+    "metaglass/300",
+    "surge-alloy/20",
+    "锂/120"
+  ],
+  
+  "research": {
+    "parent": "铜压缩厂",
+    "requirements": [
+      "surge-alloy/200",
+      "锂/100"
+    ]
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "天然气"
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-rotator",
+        "rotateSpeed": 1.4,
+        "spinSprite": true
+      },
+      {
+        "type": "DrawRegion",
+        "suffix": "-top"
+      }
+    ]
+  }
+}

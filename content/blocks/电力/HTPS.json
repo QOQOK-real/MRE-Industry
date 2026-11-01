@@ -1,0 +1,72 @@
+{
+  "type": "ImpactReactor",
+  "category": "power",
+  "name": "HTPS",
+  "description": "【Heavy Thermal Power Station】重型温差发电厂",
+  "details": "MRE Soldier: 建在雪地上不行吗？",
+  "hideDetails": false,
+  "size": 5,
+  "health": 1200,
+
+  "hasLiquids": true,
+  "hasItems": false,
+  "liquidCapacity": 50,
+  "powerProduction": 633.33,
+  "warmupSpeed": 0.0004,
+
+  "explosionDamage": 0,
+  "explosionRadius": 0,
+  "explosionMinWarmup": 1,
+  "explosionShake": 0,
+  "explodeEffect": "none",
+  "explodeSound": "none",
+
+  "consumes": {
+    "power": 50,
+    "liquids": ["液氦/0.001166", "slag/0.05"]
+  },
+
+  "ambientSound": "loopPulse",
+  "ambientSoundVolume": 0.08,
+
+  "buildTime": 1400,
+  "requirements": [
+    "铜钢/200",
+    "titanium/400",
+    "metaglass/100",
+    "silicon/1000",
+    "graphite/4000",
+    "surge-alloy/1000",
+    "锂/300"
+  ],
+  "research": {
+    "parent": "differential-generator",
+    "requirements": [
+      "铜钢/100",
+      "titanium/4000",
+      "metaglass/2000",
+      "silicon/4000",
+      "graphite/4000",
+      "surge-alloy/3000",
+      "锂/600"
+    ],
+    "objectives": [
+      "液氦"
+    ]
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawDefault"
+      },
+      {
+        "type": "DrawFrames",
+        "frames": 16,
+        "interval": 4,
+        "sine": false
+      }
+    ]
+  }
+}

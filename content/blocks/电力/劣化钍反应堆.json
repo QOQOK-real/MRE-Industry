@@ -1,0 +1,76 @@
+{
+  "type": "NuclearReactor",
+  "category": "power",
+  "name": "劣化钍反应堆",
+  "description": "裂解重钍放电。。",
+  "details": "核弹，轻而易举啊",
+  "hideDetails": false,
+
+
+  "size": 4,
+  "health": 420,
+  "hasItems": true,
+  "itemCapacity": 10,
+  "hasLiquids": true,
+  "liquidCapacity": 6,
+
+  "fuelItem": "重钍",
+  "itemDuration": 180,
+  "powerProduction": 150,
+
+  "heating": 0.0083,
+  "coolantPower": 0.5,
+
+  "explosionRadius": 50,
+  "explosionDamage": 7000,
+  "explosionShake": 6,
+  "explosionShakeDuration": 16,
+
+  "consumes": {
+    "items": [ "重钍/1" ],
+    "liquid": "超零度冷却液/0.2"
+  },
+
+  "lightColor": "7f19ea",
+  "coolColor": "ffffff00",
+  "hotColor": "ff2a10a3",
+  "smokeThreshold": 0.3,
+  "flashThreshold": 0.46,
+
+  "requirements": [
+      "铜钢/100",
+      "titanium/4000",
+      "metaglass/2000",
+      "silicon/4000",
+      "graphite/4000",
+      "surge-alloy/3000",
+      "锂/100"
+    ],
+
+  "research": {
+    "parent": "ThoriumReactor",
+    "requirements": [
+      "silicon/2000",
+      "metaglass/1000",
+      "graphite/1000",
+      "titanium/1250",
+      "铜钢/100"
+    ],
+    "objectives": [
+      "超零度冷却液"
+    ]
+  },
+
+  "drawer": {
+    "type": "DrawMulti",
+    "drawers": [
+      {
+        "type": "DrawLiquidTile",
+        "drawLiquid": "超零度冷却液",
+        "padding": 0,
+        "alpha": 1
+      },
+      { "type": "DrawDefault" }
+    ]
+  }
+}

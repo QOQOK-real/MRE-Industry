@@ -1,0 +1,48 @@
+{
+    "type": "battery",
+    "category": "power",
+    "name": "MF001",
+    "description":"储藏大量电力",
+    "details": "MRE Soldier: 这根巨大电池能为40000根香蕉通电……吧",
+    "hideDetails": false,
+    "size": 4,
+    "health": 2200,
+    "consumes": {
+        "powerBuffered":450000
+    },
+
+    "requirements": [
+        "重钍/50",
+        "titanium/290",
+        "metaglass/100",
+        "lead/900",
+        "silicon/400"
+    ],
+    "research": {
+        "parent": "Battery",
+        "requirements": [
+            "重钍/100",
+            "titanium/400",
+            "metaglass/100",
+            "silicon/100"
+        ],
+        "objectives": ["重钍"]
+    },
+    
+    "drawer": {
+        "type": "DrawMulti",
+        "drawers": [
+            "DrawDefault",
+            {
+                "type": "DrawPower",
+                "emptyLightColor": "ff0000",
+                "fullLightColor": "00ff00"
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": "-top"
+            }
+        ]
+    },
+    "sprite": "sprites/blocks/电力/MF001.png"
+}

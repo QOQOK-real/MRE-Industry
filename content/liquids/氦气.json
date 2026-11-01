@@ -1,0 +1,25 @@
+{
+  "type": "liquid",
+  "name": "氦气",
+  "description": "用于冷却或提供升力",
+  "details": "从天然气中提取出的气体，又冷又轻。除了特定的合金炮管专为其服务，大多数炮台都无法的使用其作为冷却液",
+  "color": "#befffd",
+  "barColor": "#befffd",
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "coolant": false,
+  "heatCapacity": 0.4,
+  "temperature": 0.6,
+  "gas":"true",
+  "viscosity": 0,
+  "canBePumped": true,
+  "pumpAmount": 0.5,
+  "alwaysUnlocked": false,
+  "research": {
+    "parent": "天然气",
+    "objectives": [
+      "CFU"
+    ]
+  },
+  "sprite": "sprites/liquids/氦气.png"
+}

@@ -1,0 +1,16 @@
+{
+    "type": "material",
+    "name": "重钍",
+    "description": "用于劣化发电",
+    "details": "",
+    "color": "#90476c",
+    "cost": "1",
+    "flammability": 2,
+    "hardness": 1,
+    "explosiveness": 1,
+    "radioactivity": 0.7,
+    "charge": 0,
+    "alwaysUnlocked":false,
+    "research": "凝炼厂",
+    "sprite": "sprites/items/重钍.png"
+}

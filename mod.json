@@ -1,0 +1,10 @@
+{
+    "name": "MRE-Industry",
+    "displayName": "MRE工业",
+    "subtitle": "MRE为您服务",
+    "author": "QOQOK",
+    "description": "MRE雇佣公司——服务范围覆盖全球，为雇主提供最新的工业技术和科研资料，只要你肯花费相应的代价",
+    "version": "0.1.0",
+    "minGameVersion": "160",
+    "repo": "QOQOK-real/MRE-Industry"
+}

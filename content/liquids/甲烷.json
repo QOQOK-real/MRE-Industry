@@ -1,0 +1,25 @@
+{
+  "type": "liquid",
+  "name": "甲烷",
+  "description": "天然气中分离出的气体",
+  "details": "长期吸入会中毒哦",
+  "color": "#79ffa4",
+  "barColor": "#79ffa4",
+  "flammability": 2,
+  "explosiveness": 2,
+  "coolant": false,
+  "heatCapacity": 0.5,
+  "temperature": 0.6,
+  "gas":"true",
+  "viscosity": 0,
+  "canBePumped": true,
+  "pumpAmount": 0.5,
+  "alwaysUnlocked": false,
+  "research": {
+    "parent": "天然气",
+    "objectives": [
+      "CFU"
+    ]
+  },
+  "sprite": "sprites/liquids/甲烷.png"
+}

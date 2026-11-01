@@ -1,0 +1,52 @@
+{
+"type": "ConsumeGenerator",
+"name": "化工放电塔",
+"description": "分裂化工电池组",
+"details": "铀循环还未完成awa，目前没法用",
+"hideDetails": false,
+"size": 3,
+"health": 1080,
+
+"minItemEfficiency": 1,
+"itemCapacity": 10,
+"hasLiquids": false,
+"hasItems": true,
+"itemDuration":220,
+"powerProduction": 150,
+"generateEffect":"lightning", 
+
+"consumes": {
+    "items": {"item": "离子管", "amount": 1}
+},
+
+"requirements": [
+		"silicon/200",
+		"titanium/1250",
+        "铜钢/500"
+],
+"category": "power",
+
+"drawer": {
+  "type": "DrawMulti",
+  "drawers": [
+    {
+      "type": "DrawRegion",
+      "suffix": "-底"
+    },
+    {
+      "type": "DrawCondition",
+      "condition": "producing",
+      "drawer": {
+        "type": "DrawLiquidRegion",
+        "drawLiquid": "water",
+        "suffix": "-光"
+      }
+    }
+  ]
+},
+"sprite": "sprites/blocks/电/化工放电塔.png",
+
+"researchCostMultiplier": 0.4,
+"research":"凝练厂"
+
+} 

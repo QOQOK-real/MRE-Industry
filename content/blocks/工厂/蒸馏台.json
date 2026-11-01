@@ -1,0 +1,61 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "蒸馏台", 
+    "description": "把废水蒸馏稳定提取锂元素",
+    "details": "如果蒸馏更好用，还原反应还算得了什么啊？？？所以消耗甲烷助燃是必要的",
+
+    "health": 200,
+    "size": 2,
+    "hasLiquids": true,
+    "itemCapacity":25,
+    "liquidCapacity": 15,
+    
+    "craftTime": 120,
+    "consumes": {
+        "power": 3.2,
+        "items": ["pyratite/2"],
+        "liquids": ["甲烷/0.6"]
+    },
+    "outputItems": [
+        {"item": "锂", "amount": 3}
+    ],
+    "outputLiquid": {
+        "liquid": "water",
+        "amount": 0.3
+    },
+
+    "buildTime": 50,
+    "requirements": [
+        "copper/30",
+        "铜钢/10",
+        "lead/40",
+        "metaglass/20",
+        "silicon/30"
+    ],
+    "researchCostMultiplier": 0.2,
+    "research": "铜压缩厂",
+
+    "updateEffect": {
+    "type": "ParticleEffect",
+    "region": "circle-shadow",
+    "particles": 4,
+    "length": 7,
+    "cone": 360,
+    "lifetime": 45,
+    "interp": "pow2Out",
+    "sizeFrom": 4,
+    "sizeTo": 0,
+    "colorFrom": "919191",
+    "colorTo": "e0e0e000",
+    "offsetX": 0,
+    "offsetY": 0,
+    "lightColor": "919191",
+    "lightOpacity": 0.15,
+    "lightScl": 2
+    },
+    "updateEffectChance": 0.15,
+    "updateEffectSpread": 0,
+
+    "sprite": "sprites/blocks/工厂/蒸馏台.png"
+}

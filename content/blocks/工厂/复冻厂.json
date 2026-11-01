@@ -1,0 +1,54 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "复冻厂", 
+    "description": "液化氦气产出液氦",
+    "details": "利用J-T效应生产液氦",
+
+    "health": 320,
+    "size": 3,
+    "hasLiquids": true,
+    "itemCapacity":0,
+    "liquidCapacity": 5,
+    
+    "craftTime": 320,
+    "consumes": {
+        "power": 30,
+        "liquids": ["氦气/0.001166"]
+    },
+    "outputLiquid": {
+        "liquid": "液氦",
+        "amount": 0.001                         
+    },
+
+    "buildTime": 355,
+    "requirements": [
+        "titanium/50",
+        "silicon/20",
+        "锂/15",
+        "metaglass/30",
+        "lead/20"
+    ],
+    "researchCostMultiplier": 0,
+    "research": "氦气",
+
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            {
+                "type": "DrawRegion",
+				"suffix": "-底"
+            },
+            { 
+                "type": "DrawLiquidTile",
+                "drawLiquid": "氦气",
+                "padding": 0,
+                "alpha": 1
+            },
+            {
+                "type": "DrawRegion",
+                "suffix": ""
+            }
+        ]
+    }
+}

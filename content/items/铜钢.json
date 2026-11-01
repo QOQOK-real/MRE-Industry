@@ -1,0 +1,16 @@
+{
+    "type": "material",
+    "name": "铜钢",
+    "description": "用于制造大型结构件",
+    "details": "强化组合过后的铜，你可以称之为铜Pro Max!",
+    "color": "#d0a972",
+    "cost": "1",
+    "flammability": 0,
+    "hardness": 3,
+    "explosiveness": 0,
+    "radioactivity": 0,
+    "charge": 0,
+    "alwaysUnlocked": false,
+    "research": "劣化物",
+    "sprite": "sprites/items/铜钢.png"
+}

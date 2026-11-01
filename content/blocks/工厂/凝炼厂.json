@@ -1,0 +1,60 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "凝炼厂", 
+    "description": "沉淀钍为放射性更强的物质",
+    "details": "MRE化工板块",
+
+    "health": 800,
+    "size": 3,
+    "hasLiquids": true,
+    "itemCapacity":35,
+    "liquidCapacity": 20,
+
+    "craftTime": 360,
+    "consumes": {
+        "power": 2.333,
+        "items": ["thorium/5"],
+        "liquid": {
+            "liquid": "劣化废液",
+            "amount": 2.22
+        }
+    },
+    "outputItems": [
+        {"item": "重钍", "amount": 12}
+    ],
+    
+    "buildTime": 260,
+    "requirements": [
+        "titanium/120",
+        "silicon/500",
+        "铜钢/40",
+        "锂/65",
+        "graphite/100"
+    ],
+    "researchCostMultiplier": 0.6,
+    "research":"锂还原厂",
+
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+			{
+				"type": "DrawRegion",
+				"suffix": "-底"
+			},
+            {
+                "type": "DrawFlame",
+                "flameColor": "e8ffa9",
+                "flameRadius": 4.2,
+                "flameRadiusIn": 3,
+                "flameRadiusScl": 5,
+                "flameRadiusMag": 1.2,
+                "flameRadiusInMag": 0.6,
+                "lightRadius": 20,
+                "lightAlpha": 0.5,
+                "lightSinScl": 10,
+                "lightSinMag": 3
+            }
+        ]
+    }
+}

@@ -1,0 +1,101 @@
+{
+  "type": "ItemTurret",
+  "category": "turret",
+  "name": "浪潮",
+  "description": "MRE地面板块",
+  "details": "",
+  "hideDetails": false,
+
+  "size": 2,
+  "health": 420,
+  "range": 192,
+  "reload": 12,
+  "recoil": 0,
+  "inaccuracy": 6,
+
+  "targetAir": false,
+  "targetGround": true,
+  "targetBlocks": true,
+
+  "maxAmmo": 30,
+  "ammoPerShot": 1,
+  "liquidCapacity": 20,
+
+  "consumes": {
+    "coolant": {
+      "amount": 0.3,
+      "optional": true,
+      "booster": true
+    }
+  },
+  "coolantMultiplier": 5,
+
+  "ammoTypes": {
+    "graphite": {
+      "type": "FlakBulletType",
+      "speed": 5,
+      "damage": 4,
+      "splashDamage":10,
+      "splashDamageRadius": 24,
+      "lifetime": 42,
+      "width": 8,
+      "height": 10,
+      "explodeRange": 30,
+      "explodeDelay": 5,
+      "ammoMultiplier": 4,
+      "knockback": 1.2,
+      "collidesGround": true,
+      "collidesAir": false,
+      "hitEffect": "flakExplosionBig",
+      "despawnEffect": "flakExplosionBig",
+      "shootEffect": "shootBig",
+      "frontColor": "bac2cc",
+      "backColor": "858a91"
+    },
+    "titanium": {
+      "type": "FlakBulletType",
+      "speed": 6.5,
+      "damage": 6,
+      "splashDamage": 15,
+      "splashDamageRadius": 28,
+      "lifetime": 32,
+      "width": 8,
+      "height": 10,
+      "explodeRange": 32,
+      "explodeDelay": 5,
+      "ammoMultiplier": 3,
+      "reloadMultiplier": 1.4,
+      "knockback": 1.5,
+      "collidesGround": true,
+      "collidesAir": false,
+      "hitEffect": "flakExplosionBig",
+      "despawnEffect": "flakExplosionBig",
+      "shootEffect": "shootBig",
+      "frontColor": "d8e5f0",
+      "backColor": "7d8b99"
+    }
+  },
+
+  "drawer": {
+    "type": "DrawTurret",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-barrel",
+        "progress": "recoil",
+        "moveY": -2,
+        "heatProgress": "recoil",
+        "heatColor": "ffffff",
+        "heatLight": true,
+        "outline": true
+      }
+    ]
+  },
+
+  "requirements": [ "copper/110", "lead/60", "titanium/60"],
+  "researchCostMultiplier": 0.12,
+  
+  "buildVisibility": "shown",
+  "alwaysUnlocked": false,
+  "research": "salvo"
+}

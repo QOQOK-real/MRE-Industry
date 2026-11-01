@@ -1,0 +1,16 @@
+{
+    "type": "material",
+    "name": "离子管",
+    "description": "用于聚合发电",
+    "details": "",
+    "color": "#ffff00",
+    "cost": "1",
+    "flammability": 2,
+    "hardness": 1,
+    "explosiveness": 1,
+    "radioactivity": 0.7,
+    "charge": 0,
+    "alwaysUnlocked":false,
+    "research": "凝炼厂",
+    "sprite": "sprites/items/离子管.png"
+}

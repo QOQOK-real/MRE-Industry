@@ -1,0 +1,18 @@
+{
+  "type": "liquid",
+  "name": "劣化废液",
+  "description": "污染严重的废水",
+  "color": "#b4b4b4",
+  "barColor": "#b4b4b4",
+  "flammability": 0.3,
+  "explosiveness": 0.2,
+  "coolant": false,
+  "heatCapacity": 0.0,
+  "temperature": 0.5,
+  "viscosity": 0.99,
+  "canBePumped": true,
+  "pumpAmount": 0.5,
+  "alwaysUnlocked": false,
+  "research": "劣化厂",
+  "sprite": "sprites/liquids/劣化废液.png"
+}

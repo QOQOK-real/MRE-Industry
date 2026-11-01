@@ -1,0 +1,54 @@
+{
+    "type": "GenericCrafter",
+    "category": "crafting",
+    "name": "铜压缩厂", 
+    "description": "压缩铜钢",
+    "details": "",
+    
+    "health": 350,
+    "size": 3,
+    "hasLiquids": false,
+    "itemCapacity":80,
+    
+    "craftTime": 360,
+    "consumes": {
+        "power": 3.5,
+        "items": ["copper/20"]
+    },
+    "outputItems": [
+        {"item": "铜钢", "amount": 1}
+    ],
+    
+    "buildTime": 333.48,
+    "requirements": [
+        "copper/420",
+        "silicon/220",
+        "lead/120",
+        "锂/50"
+    ],
+    "researchCostMultiplier": 0.1,
+    "research": "锂还原厂",
+
+    "drawer": {
+		"type": "DrawMulti",
+		"drawers": [
+            { "type": "DrawDefault" },
+            {
+                "type": "DrawCrucibleFlame",
+                "flameRad": 5,
+                "circleSpace": 2,
+                "flameRadiusScl": 10,
+                "flameRadiusMag": 2.25,
+                "circleStroke": 1.5,
+                "alpha": 0.5,
+                "particles": 30,
+                "particleRad": 7,
+                "particleSize": 3,
+                "particleLife": 70,
+                "rotateScl": 1.5,
+                "flameColor": "f06a40",
+                "midColor": "f2d585"
+            }
+        ]
+    }
+}
